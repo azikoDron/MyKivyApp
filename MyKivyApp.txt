@@ -1,0 +1,20 @@
+IMPORTANT: Initializing git repository: MyKivyApp
+Work file detected:  main.py
+Tracked files: .git ClientEmulation.py  ReadMe.txt 
+Commitment: git commit -m "Commit 202004191246 "
+
+Work file detected:  MyKivyApp.txt
+Tracked files: .git main.py  MyKivyApp.txt 
+Commitment: git commit -m "Commit 202004191259 "
+
+Work file detected:  MyKivyApp.txt
+Tracked files: .git main.py  MyKivyApp.txt 
+Commitment: git commit -m "Commit 202004191301 "
+
+
+Tracked files: .git main.py  MyKivyApp.txt 
+Commitment: git commit -m "Commit 202004191305 "
+
+
+Tracked files: .git main.py  MyKivyApp.txt 
+Commitment: git commit -m "Commit 202004191306 "
