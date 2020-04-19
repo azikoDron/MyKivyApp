@@ -22,3 +22,7 @@ Commitment: git commit -m "Commit 202004191306 "
 
 Tracked files: .git main.py  MyKivyApp.txt 
 Commitment: git commit -m "Commit 202004191309 "
+
+
+Tracked files: ['.git', 'main.py', 'MyKivyApp.txt']
+Commitment: git commit -m "Commit 202004191311 "
