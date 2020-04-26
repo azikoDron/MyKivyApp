@@ -30,3 +30,11 @@ Commitment: git commit -m "Commit 202004191311 "
 
 Tracked files: ['.git', 'main.py', 'MyKivyApp.txt']
 Commitment: git commit -m "Commit 202004191336 "
+
+
+Tracked files: ['.git', 'main.py', 'MyKivyApp.txt']
+Commitment: git commit -m "Commit 202004191346 "
+IMPORTANT: Initializing git repository: .git
+
+Tracked files: ['.git', 'main.py', 'MyKivyApp.txt']
+Commitment: git commit -m "Commit 2020.04.19_14:03 "
