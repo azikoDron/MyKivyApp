@@ -1,10 +1,17 @@
 #:kivy 2.0.0
 
 <MainWindows>
+    orientation: "vertical"
     Button:
+        size_hint: 1, None
+        size: "40dp", "30dp"
         text: 'Hello from test.kv'
+        # height: "50dp"
+        # x, center_x, right
+        # y, center_y, right
+        pos_hint: {"x": 0.1}
     Button:
-        text: 'Hello from test.kv'
-        on_press: button_press()
+        text: root.my_text
+        on_press: root.ons()
 
-    #MainWindows:
+   # MainWindows:
