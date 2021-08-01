@@ -2,38 +2,26 @@
 
 <MainWindows>
     orientation: "vertical"
-
     TopPanelBar:
         size_hint: 1, 0.05
-#    ToggleButton:
-#        text: root.my_text
-#        on_state: root.toggle_method_def(self)
     TaskScrollView:
 
-#    Button:
-#        text: "0"
-#        on_press: root.ons(self)
 
 <TaskScrollView@ScrollView>
     TaskBar:
         size_hint: 1, None
-        height: "1000dp"
-        Task:
+        height: "1000dp"        # FIX ME
+
 
 <Task>
     orientation: "horizontal"
-    #size_hint: 1, 0.1
     Label:
-        # size_hint: 1, 0.3
-        text: "0"
+        text: str(root.task_id)
     Button:
-        text: "1"
-
+        text: str(root.task_name)
     Label:
-        # size_hint: 1, 0.3
-        text: "0"
+        text: root.task_subject
     Switch:
-        on_state:
 
 
 
@@ -54,3 +42,7 @@
         # x, center_x, right
         # y, center_y, right
         # pos_hint: {"center_y": 1, "center_x": 0}
+
+#    ToggleButton:
+#        text: root.my_text
+#        on_state: root.toggle_method_def(self)

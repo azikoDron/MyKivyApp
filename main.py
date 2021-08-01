@@ -4,24 +4,23 @@ from kivy.properties import StringProperty
 # from kivy.uix.button import Button
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
-# from kivy.uix.scrollview import ScrollView
 from kivy.uix.stacklayout import StackLayout
+from task import Task
 kivy.require('2.0.0')
 
 
-class Task(BoxLayout):
-    def __init__(self, **kwargs):
-        super(Task, self).__init__(**kwargs)
-        self.size_hint_y = 0.1
-    pass
-
-
 class TopPanelBar(BoxLayout):
-    # ToggleButton
     pass
 
 
 class TaskBar(StackLayout):
+    def __init__(self, **kwargs):
+        super(TaskBar, self).__init__(**kwargs)
+        # Adding task
+        for task in Task.get_all_tasks():
+            print(task)
+            self.add_widget(Task(task[0], task[1], task[2], task[3]))
+
     pass
 
 
