@@ -1,7 +1,5 @@
 import kivy
 from kivy.properties import StringProperty
-# from kivy.properties import NumericProperty
-# from kivy.uix.button import Button
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.stacklayout import StackLayout
