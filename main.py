@@ -23,11 +23,11 @@ class TaskBar(StackLayout):
 
 
 class MainWindows(BoxLayout):
-    def __init__(self, **kwargs):
-        super(MainWindows, self).__init__(**kwargs)
-
     my_text = StringProperty("ON")
     num = 0
+
+    def __init__(self, **kwargs):
+        super(MainWindows, self).__init__(**kwargs)
 
     def toggle_method_def(self, *arg):
         if arg[0].state == "down":

@@ -1,0 +1,1 @@
+to tun examples D:\Projects\Project_Sticker\environment\share\kivy-examples\demo\kivycatalog
