@@ -1,0 +1,16 @@
+#:kivy 2.0.0
+
+<TopPanelBar>
+    BoxLayout:
+        orientation: "horizontal"
+        Button:
+            text: "M"
+            size_hint: 0.2,  1
+        Button:
+            size_hint: 0.6,  1
+            text: 'You are at Home task bar'
+        Button:
+            size_hint: 0.2, 1
+            text: 'Add task'
+            on_press: root.manager.current = 'create_task'
+

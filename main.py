@@ -1,54 +1,25 @@
 import kivy
-from kivy.properties import StringProperty
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.stacklayout import StackLayout
-from task import Task
+from kivy.uix.screenmanager import ScreenManager, Screen
+from Tasks.tasks_screen import TasksWindow
+from Tasks.create_task import CreateTask
+
+
 kivy.require('2.0.0')
 
 
-class TopPanelBar(BoxLayout):
+class TopPanelBar(Screen):
     pass
 
 
-class TaskBar(StackLayout):
-    def __init__(self, **kwargs):
-        super(TaskBar, self).__init__(**kwargs)
-        # Adding task
-        for task in Task.get_all_tasks():
-            print(task)
-            self.add_widget(Task(task[0], task[1], task[2], task[3]))
-
-    pass
-
-
-class MainWindows(BoxLayout):
-    my_text = StringProperty("ON")
-    num = 0
-
-    def __init__(self, **kwargs):
-        super(MainWindows, self).__init__(**kwargs)
-
-    def toggle_method_def(self, *arg):
-        if arg[0].state == "down":
-            self.my_text = "OFF"
-        else:
-            self.my_text = "ON"
-        # return True
-
-    def ons(self, arg):
-        if self.my_text == "ON":
-            print(arg.state)
-            self.num += 1
-            arg.text = str(self.num)
-
-    pass
-
-
-class TestApp(App):
+class StickerApp(App):
     def build(self):
-        return MainWindows()
+        sc_m = ScreenManager()
+        sc_m.add_widget(TasksWindow(name="tasks_window"))
+        sc_m.add_widget(CreateTask(name="create_task"))
+        return sc_m
 
 
 if __name__ == '__main__':
-    TestApp().run()
+    StickerApp().run()

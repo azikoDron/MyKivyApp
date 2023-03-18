@@ -1,0 +1,23 @@
+<TasksWindow>
+    BoxLayout:
+        orientation: "vertical"
+        TopPanelBar:
+            size_hint: 1, 0.05
+        TaskScrollView:
+
+
+<TaskScrollView@ScrollView>
+    TasksBar:
+        size_hint: 1, None
+        height: "1000dp"        # FIX ME
+
+
+<Tasks>
+    orientation: "horizontal"
+    Label:
+        text: str(root.task_id)
+    Button:
+        text: str(root.task_name)
+    Label:
+        text: root.task_subject
+    Switch:

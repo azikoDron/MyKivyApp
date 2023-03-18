@@ -8,7 +8,7 @@ SQL SAVE Variant ...
 
 
 class SaveData:
-    def __init__(self, db_name='template', dp_location='.'):
+    def __init__(self, db_name='template', dp_location='./Data'):
         self.db_name = db_name
         self.dp_location = dp_location + str(os.sep) + db_name
         self.db_connection = self.db_connection()
