@@ -1,0 +1,23 @@
+<TopNavBar>
+
+    size_hint: 1,  0.1
+    pos_hint: {'top': 1}
+    orientation: "horizontal"
+
+    third_button: third_button
+
+    Button:
+        text: "M"
+        size_hint: 0.2,  1
+        on_press: print(dir(root.parent))
+    Button:
+        size_hint: 0.6,  1
+        text: 'You are at Home task bar'
+    Button:
+        id: third_button
+        size_hint: 0.2, 1
+        text: 'Add task'
+        on_press: root.parent.parent.manager.current = "task_stack_window"
+        # on_press: root.parent.parent.manager.current = "main_screen"
+            # self.on_press= root.parent.parent.manager.current = "main_screen"
+

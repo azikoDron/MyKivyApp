@@ -3,8 +3,8 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
 from Data.baseSdk import SaveData
 from kivy.lang import Builder
-Builder.load_file("KV/create_task.kv")
+Builder.load_file("KV/task_create_screen.kv")
 
 
-class CreateTask(Screen, BoxLayout):
+class TaskCreateScreen(Screen):
     pass

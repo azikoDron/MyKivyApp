@@ -1,6 +1,8 @@
+from kivy.lang import Builder
 from kivy.properties import StringProperty, NumericProperty
 from kivy.uix.boxlayout import BoxLayout
 from Data.baseSdk import SaveData
+Builder.load_file("KV/task_preview.kv")
 
 
 class Tasks(BoxLayout):
