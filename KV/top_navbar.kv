@@ -16,8 +16,8 @@
     Button:
         id: third_button
         size_hint: 0.2, 1
-        text: 'Add task'
-        on_press: root.parent.parent.manager.current = "task_stack_window"
+        text: root.button_name
+        on_press: root.third_button_change_action()
         # on_press: root.parent.parent.manager.current = "main_screen"
             # self.on_press= root.parent.parent.manager.current = "main_screen"
 

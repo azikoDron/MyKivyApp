@@ -15,8 +15,8 @@ kivy.require('2.0.0')
 class StickerApp(App):
     def build(self):
         sc_m = ScreenManager()
+        sc_m.add_widget(TasksStackScreen(name="task_stack_screen"))
         sc_m.add_widget(MainScreenView(name="main_screen"))
-        sc_m.add_widget(TasksStackScreen(name="task_stack_window"))
 
         return sc_m
 
