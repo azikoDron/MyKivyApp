@@ -1,4 +1,4 @@
-<TasksStackScreen>
+<TaskListScreen>
     BoxLayout:
         top_nav_bar: top_nav_bar
         orientation: "vertical"
@@ -9,6 +9,6 @@
 
 
 <TaskScrollView@ScrollView>
-    TasksBar:
+    TaskList:   # StackLayout
         size_hint: 1, None
-        height: "1000dp"        # FIX ME
+        height: self.minimum_height     # "1000dp"
